@@ -1,0 +1,63 @@
+/* Sidebar container */
+.sidebar {
+  width: 220px; /* Increased width for better spacing */
+  background-color: #00274d; /* Darker shade for a more modern look */
+  height: 100vh;
+  color: #ffffff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo styling */
+.logo img {
+  width: 120px; /* Adjusted size for better proportion */
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%; /* Circular logo for a modern look */
+}
+
+/* Navigation styling */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  flex: 1; /* Allows the nav to grow and push the logout button to the bottom */
+}
+
+.sidebar-nav li {
+  margin: 10px 0; /* Added margin for spacing between items */
+}
+
+.sidebar-nav li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px; /* Added padding for better click area */
+  border-radius: 4px; /* Rounded corners for a softer look */
+  transition: background-color 0.3s, padding 0.3s; /* Smooth transitions */
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a.active {
+  background-color: #1a3c6c; /* Slightly different hover color */
+  padding: 12px 20px; /* Increased padding for active and hover states */
+}
+
+/* Logout button styling */
+.logout-button {
+  padding: 12px;
+  background-color: #ebebeb; /* Brighter red for better visibility */
+  color: #272222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  margin: 20px auto; /* Center the button with margin */
+  width: 180px; /* Adjusted width */
+}
+
+.logout-button:hover {
+  background-color: #572d2d; /* Darker red for hover */
+  transform: scale(1.05); /* Slight scale effect for button */
+}
